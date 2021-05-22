@@ -1,0 +1,185 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+%\usepackage{tcolorbox} % is not requiered for the paper
+\usepackage{subfig,eurosym}
+\usepackage{physics}
+\usepackage[svgnames]{xcolor}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{mathtools,old-arrows,verbatim,mathrsfs,cite}
+\usepackage{graphicx}
+\usepackage{epstopdf,epsfig,changepage}
+\newcommand\hmmax{1}
+\newcommand\bmmax{1}
+\usepackage{bm}
+\usepackage[top=2.5cm, bottom=3cm, left=3.5cm, right=3.5cm,
+heightrounded,marginparwidth=1.5cm, marginparsep=1cm]{geometry}
+\usepackage[shortlabels]{enumitem}
+\usepackage[square,numbers,merge,comma,sort&compress]{natbib} % bibliography
+\makeatletter
+\def\NAT@spacechar{\,}  % define space inside [1,\,2] ?
+\makeatother
+\usepackage{comment}
+\usepackage{relsize,setspace,moresize}
+\usepackage{latexsym,mathrsfs,calligra,aurical}
+\usepackage{float,appendix,xargs,extarrows,empheq,url}
+
+%\usepackage[breaklinks=true,backref=page]{hyperref}
+
+\usepackage{jheppub}
+\hypersetup{
+	bookmarks=true,pdfmenubar=true,pdffitwindow=false,pdfpagemode={UseNone},
+	pdfstartview={FitH},colorlinks=true,bookmarks=true,bookmarksnumbered=true,
+	plainpages,linktoc=page,citecolor=blue,filecolor=black,
+	linkcolor=Crimson,urlcolor=Green}
+\usepackage{footnotebackref}
+\usepackage{hypernat}
+
+
+\newcommand{\tcb}{\textcolor{blue}}
+\newcommand{\tcr}{\textcolor{red}}
+%\renewcommand{\b}[1]{\bar{#1}}
+%\renewcommand{\t}[1]{\tilde{#1}}
+
+\DeclareFixedFont\trfont{OT1}{phv}{b}{sc}{11}
+\interfootnotelinepenalty=10000
+
+\hyphenation{sym-me-tri-za-tion}
+
+\def\={\:=\:}
+\newcommand{\N}{\mathcal{N}}
+\def\pa{\partial}
+\newcommand{\br}{\biggr}
+\newcommand{\bl}{\biggl}
+\newcommand\nv{n_\text{v}}
+\newcommand\ns{n_\text{s}}
+\newcommand\Ms{\mathscr{M}}
+\newcommand\zb{{\bar{z}}}
+\newcommand\ib{{\bar{\imath}}}
+\newcommand\jb{{\bar{\jmath}}}
+\newcommand\Mscal{\mathscr{M}_\text{scal}}
+
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+\def\Om{\Omega}
+\newcommandx{\ETh}[2][1=M,2=\alpha,usedefault]{\Theta_{#1}{}^{#2}}
+\newcommandx{\overbar}[1]{\mkern1.5mu\overline{\mkern-2.0mu#1\mkern-2.0mu}\mkern1.5mu}
+\newcommandx{\overbarM}[1]{\mkern6.0mu\overline{\mkern-5.5mu#1\mkern-3.5mu}\mkern1.5mu}
+\newcommandx{\overbarcal}[1]{\mkern6.0mu\overline{\mkern-5.5mu#1\mkern-1.0mu}\mkern1.5mu}
+\DeclareFixedFont\trfont{OT1}{phv}{b}{sc}{11}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\DeclareSymbolFontAlphabet{\Scr}{rsfs}
+\DeclareMathAlphabet{\mathbold}{U}{BOONDOX-ds}{m}{n}
+\SetMathAlphabet{\mathbold}{bold}{U}{BOONDOX-ds}{b}{n}
+\DeclareMathAlphabet{\mathcalboondox}{U}{BOONDOX-calo}{m}{n}
+\SetMathAlphabet{\mathcalboondox}{bold}{U}{BOONDOX-calo}{b}{n}
+\DeclareMathAlphabet{\mathbcalboondox}{U}{BOONDOX-calo}{b}{n}
+
+
+\title{\centering\boldmath\LARGE\bfseries{%
+		Sch-Melvin%
+	}\vspace{1.25em}}
+
+
+\author[a]{xxxx}
+\emailAdd{xxxxx@pucv.cl}
+
+\author[b]{David Choque,}
+\emailAdd{david.choque@pucv.cl}
+
+\author[c]{xxxx}
+\emailAdd{xxxx}
+
+
+\bigskip
+
+\affiliation[a]{Universidad Nacional de San Antonio Abad del Cusco, Av. La Cultura 733, Cusco, Per\'u.}
+
+\affiliation[b]{Pontificia Universidad Cat\'{o}lica de Valpara\'{i}so,
+	Instituto de F\'{i}sica, Av.\ Brasil 2950, Valpara\'{i}so, Chile}
+
+
+\bigskip
+
+
+\abstract{%
+	We present an exact.%
+}
+
+
+\date{}
+
+
+\begin{document}
+	
+	\maketitle
+
+%%%%
+\section{Hairy-Kerr-Newman}
+%%%
+
+R: Consideramos la teor\'ia
+\begin{equation}
+I=\frac{1}{2\kappa}\int_{\mathcal{M}}{d^4x\sqrt{-g}\left[R-2(\pa\phi)^2-e^{-2\sqrt{3}\phi}F^2\right]}
+\end{equation}
+con las ecuaciones de movimiento
+\begin{align}
+R_{\mu\nu}-2\pa_\mu\phi2\pa_\nu\phi-2e^{-2\sqrt{3}\phi}\left(F_{\mu\alpha}F_{\nu}{}^{\alpha}-\frac{1}{4}g_{\mu\nu}F^2\right)&=0\\
+\pa_\mu(\sqrt{-g}e^{-2\sqrt{3}\phi}F^{\mu\nu})&=0\\
+\Box{\phi}+\frac{\sqrt{3}}{2}e^{-2\sqrt{3}\phi}F^2&=0
+\end{align}
+Las siguientes expresiones para los campos representan soluciones exactas [1304.5906]
+\begin{align}
+ds^2&=-\frac{1-Z}{H}\left[dt+\frac{2aZ\sin^2\theta d\varphi}{\sqrt{1-v^2}(1-Z)}\right]dt+H\Sigma\left(\frac{dr^2}{\Delta}+d\theta^2+\frac{K}{H\Sigma}\sin^2\theta d\varphi^2\right)\\
+A&=A_tdt+A_\varphi d\varphi, \qquad \phi=-\frac{\sqrt{3}}{2}\ln{H}
+\end{align}
+donde
+\begin{equation}
+A_t=\frac{vZ}{2(1-v^2)H^2}, \quad A_\varphi=-\frac{av Z\sin^2\thta}{2\sqrt{1-v^2}}
+\end{equation}
+y las funciones son
+\begin{align}
+K&=H\Sigma+a^2H(1+ZH^{-2})\sin^2\theta\\
+H&=\sqrt{\frac{1-v^2+v^2Z}{1-v^2}}, \quad Z=\frac{2mr}{\Sigma}, \\
+\Sigma&=r^2+a^2\cos^2\theta, \quad \Delta=r^2-2mr+a^2
+\end{align}
+Estas son soluciones estacionarias, cargadas el\'ectricamente, pero sin el campo magn\'etico externo que nos interesa. Es una soluci\'on asint\'oticamente plana, $-g_{tt}=1-2M/r+\mathcal{O}(r^{-2})$, y en el l\'imite $v=0$ se reducen a las soluciones de Kerr-Newman.
+
+\subsection{Thermodynamics}
+
+We read the total energy from $g_{tt}$ in its asymptotic form.
+
+\begin{equation}
+M=m\left[1+\frac{v^2}{2(1-v^2)}\right]
+\end{equation}
+The electric charge is
+\begin{equation}
+Q=\frac{1}{4\pi}\oint_{s^2_\infty}{e^{-2\sqrt{3}\phi}\star F}=\frac{mv}{1-v^2}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%5
+\section*{\normalsize Acknowledgments}
+\vspace{-5pt}
+
+
+
+
+
+%---- BIBLIOGRAPHY ------------------------------------------
+
+\newpage
+
+%\renewcommand{\refname}{...} % For modifying the bibliography heading
+\hypersetup{linkcolor=blue}
+\phantomsection % use it for correct TOC link !!!
+\addtocontents{toc}{\protect\addvspace{4.5pt}}% add vertical space in TOC
+\addcontentsline{toc}{section}{References} % add References to TOC
+\bibliographystyle{JHEP}
+\bibliography{bibliographyBH} % The file containing the bibliography
+
+
+\end{document}
